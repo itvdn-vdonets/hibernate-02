@@ -1,0 +1,883 @@
+WARN  2022-09-06 22:46:03,449 [main][Main.java:16] : TEST
+DEBUG 2022-09-06 22:46:03,514 [main][CoreLogging.java:28] : Logging Provider: org.jboss.logging.Log4jLoggerProvider
+DEBUG 2022-09-06 22:46:03,523 [main][IntegratorServiceImpl.java:46] : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+DEBUG 2022-09-06 22:46:03,526 [main][IntegratorServiceImpl.java:46] : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+DEBUG 2022-09-06 22:46:03,531 [main][IntegratorServiceImpl.java:46] : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+INFO  2022-09-06 22:46:03,626 [main][Version.java:45] : HHH000412: Hibernate Core {5.2.2.Final}
+INFO  2022-09-06 22:46:03,629 [main][Environment.java:213] : HHH000206: hibernate.properties not found
+INFO  2022-09-06 22:46:03,631 [main][Environment.java:318] : HHH000021: Bytecode provider name : javassist
+DEBUG 2022-09-06 22:46:03,659 [main][LocalXmlResourceResolver.java:57] : Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+DEBUG 2022-09-06 22:46:03,660 [main][LocalXmlResourceResolver.java:85] : Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+DEBUG 2022-09-06 22:46:03,671 [main][JaxbCfgProcessor.java:116] : cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+DEBUG 2022-09-06 22:46:03,942 [main][Configuration.java:724] : Building session factory using internal StandardServiceRegistryBuilder
+DEBUG 2022-09-06 22:46:03,947 [main][ServiceBinding.java:68] : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+DEBUG 2022-09-06 22:46:03,947 [main][Configuration.java:652] : Building session factory using provided StandardServiceRegistry
+DEBUG 2022-09-06 22:46:03,960 [main][RegionFactoryInitiator.java:75] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+INFO  2022-09-06 22:46:03,966 [main][JavaReflectionManager.java:66] : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+DEBUG 2022-09-06 22:46:03,983 [main][BasicTypeRegistry.java:145] : Adding type registration boolean -> org.hibernate.type.BooleanType@9bcd5c12
+DEBUG 2022-09-06 22:46:03,984 [main][BasicTypeRegistry.java:145] : Adding type registration boolean -> org.hibernate.type.BooleanType@9bcd5c12
+DEBUG 2022-09-06 22:46:03,985 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@9bcd5c12
+DEBUG 2022-09-06 22:46:03,986 [main][BasicTypeRegistry.java:145] : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@b9fe9d48
+DEBUG 2022-09-06 22:46:03,988 [main][BasicTypeRegistry.java:145] : Adding type registration true_false -> org.hibernate.type.TrueFalseType@97a3e57c
+DEBUG 2022-09-06 22:46:03,989 [main][BasicTypeRegistry.java:145] : Adding type registration yes_no -> org.hibernate.type.YesNoType@d2681757
+DEBUG 2022-09-06 22:46:03,991 [main][BasicTypeRegistry.java:145] : Adding type registration byte -> org.hibernate.type.ByteType@aa84583d
+DEBUG 2022-09-06 22:46:03,992 [main][BasicTypeRegistry.java:145] : Adding type registration byte -> org.hibernate.type.ByteType@aa84583d
+DEBUG 2022-09-06 22:46:03,993 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@aa84583d
+DEBUG 2022-09-06 22:46:03,995 [main][BasicTypeRegistry.java:145] : Adding type registration character -> org.hibernate.type.CharacterType@947395e4
+DEBUG 2022-09-06 22:46:03,996 [main][BasicTypeRegistry.java:145] : Adding type registration char -> org.hibernate.type.CharacterType@947395e4
+DEBUG 2022-09-06 22:46:03,997 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@947395e4
+DEBUG 2022-09-06 22:46:03,999 [main][BasicTypeRegistry.java:145] : Adding type registration short -> org.hibernate.type.ShortType@f6b64ddd
+DEBUG 2022-09-06 22:46:03,999 [main][BasicTypeRegistry.java:145] : Adding type registration short -> org.hibernate.type.ShortType@f6b64ddd
+DEBUG 2022-09-06 22:46:04,000 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@f6b64ddd
+DEBUG 2022-09-06 22:46:04,001 [main][BasicTypeRegistry.java:145] : Adding type registration integer -> org.hibernate.type.IntegerType@2494b617
+DEBUG 2022-09-06 22:46:04,002 [main][BasicTypeRegistry.java:145] : Adding type registration int -> org.hibernate.type.IntegerType@2494b617
+DEBUG 2022-09-06 22:46:04,003 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2494b617
+DEBUG 2022-09-06 22:46:04,004 [main][BasicTypeRegistry.java:145] : Adding type registration long -> org.hibernate.type.LongType@2a430e86
+DEBUG 2022-09-06 22:46:04,005 [main][BasicTypeRegistry.java:145] : Adding type registration long -> org.hibernate.type.LongType@2a430e86
+DEBUG 2022-09-06 22:46:04,005 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Long -> org.hibernate.type.LongType@2a430e86
+DEBUG 2022-09-06 22:46:04,007 [main][BasicTypeRegistry.java:145] : Adding type registration float -> org.hibernate.type.FloatType@8767c4a3
+DEBUG 2022-09-06 22:46:04,008 [main][BasicTypeRegistry.java:145] : Adding type registration float -> org.hibernate.type.FloatType@8767c4a3
+DEBUG 2022-09-06 22:46:04,008 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@8767c4a3
+DEBUG 2022-09-06 22:46:04,010 [main][BasicTypeRegistry.java:145] : Adding type registration double -> org.hibernate.type.DoubleType@3f16fd40
+DEBUG 2022-09-06 22:46:04,010 [main][BasicTypeRegistry.java:145] : Adding type registration double -> org.hibernate.type.DoubleType@3f16fd40
+DEBUG 2022-09-06 22:46:04,011 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3f16fd40
+DEBUG 2022-09-06 22:46:04,013 [main][BasicTypeRegistry.java:145] : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@11345fb5
+DEBUG 2022-09-06 22:46:04,013 [main][BasicTypeRegistry.java:145] : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@11345fb5
+DEBUG 2022-09-06 22:46:04,014 [main][BasicTypeRegistry.java:145] : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@66c822eb
+DEBUG 2022-09-06 22:46:04,015 [main][BasicTypeRegistry.java:145] : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@66c822eb
+DEBUG 2022-09-06 22:46:04,016 [main][BasicTypeRegistry.java:145] : Adding type registration string -> org.hibernate.type.StringType@4dd05385
+DEBUG 2022-09-06 22:46:04,017 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.String -> org.hibernate.type.StringType@4dd05385
+DEBUG 2022-09-06 22:46:04,018 [main][BasicTypeRegistry.java:145] : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@dc7acac4
+DEBUG 2022-09-06 22:46:04,021 [main][BasicTypeRegistry.java:145] : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@f55e1436
+DEBUG 2022-09-06 22:46:04,022 [main][BasicTypeRegistry.java:145] : Adding type registration url -> org.hibernate.type.UrlType@1a5bbc17
+DEBUG 2022-09-06 22:46:04,022 [main][BasicTypeRegistry.java:145] : Adding type registration java.net.URL -> org.hibernate.type.UrlType@1a5bbc17
+DEBUG 2022-09-06 22:46:04,025 [main][BasicTypeRegistry.java:145] : Adding type registration Duration -> org.hibernate.type.DurationType@d6bf24e7
+DEBUG 2022-09-06 22:46:04,026 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@d6bf24e7
+DEBUG 2022-09-06 22:46:04,033 [main][BasicTypeRegistry.java:145] : Adding type registration Instant -> org.hibernate.type.InstantType@2edfcb49
+DEBUG 2022-09-06 22:46:04,033 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2edfcb49
+DEBUG 2022-09-06 22:46:04,035 [main][BasicTypeRegistry.java:145] : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@80b29ddf
+DEBUG 2022-09-06 22:46:04,035 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@80b29ddf
+DEBUG 2022-09-06 22:46:04,037 [main][BasicTypeRegistry.java:145] : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@91dfe3d
+DEBUG 2022-09-06 22:46:04,037 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@91dfe3d
+DEBUG 2022-09-06 22:46:04,039 [main][BasicTypeRegistry.java:145] : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@67e01b8b
+DEBUG 2022-09-06 22:46:04,039 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@67e01b8b
+DEBUG 2022-09-06 22:46:04,040 [main][BasicTypeRegistry.java:145] : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@b7e77e14
+DEBUG 2022-09-06 22:46:04,041 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@b7e77e14
+DEBUG 2022-09-06 22:46:04,042 [main][BasicTypeRegistry.java:145] : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4999f1d4
+DEBUG 2022-09-06 22:46:04,043 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4999f1d4
+DEBUG 2022-09-06 22:46:04,045 [main][BasicTypeRegistry.java:145] : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@d810da41
+DEBUG 2022-09-06 22:46:04,045 [main][BasicTypeRegistry.java:145] : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@d810da41
+DEBUG 2022-09-06 22:46:04,047 [main][BasicTypeRegistry.java:145] : Adding type registration date -> org.hibernate.type.DateType@e847c309
+DEBUG 2022-09-06 22:46:04,047 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.Date -> org.hibernate.type.DateType@e847c309
+DEBUG 2022-09-06 22:46:04,048 [main][BasicTypeRegistry.java:145] : Adding type registration time -> org.hibernate.type.TimeType@56fc6431
+DEBUG 2022-09-06 22:46:04,049 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@56fc6431
+DEBUG 2022-09-06 22:46:04,051 [main][BasicTypeRegistry.java:145] : Adding type registration timestamp -> org.hibernate.type.TimestampType@cb257b73
+DEBUG 2022-09-06 22:46:04,051 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@cb257b73
+DEBUG 2022-09-06 22:46:04,052 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@cb257b73
+DEBUG 2022-09-06 22:46:04,053 [main][BasicTypeRegistry.java:145] : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2315c0ca
+DEBUG 2022-09-06 22:46:04,054 [main][BasicTypeRegistry.java:145] : Adding type registration calendar -> org.hibernate.type.CalendarType@61a2af2d
+DEBUG 2022-09-06 22:46:04,055 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@61a2af2d
+DEBUG 2022-09-06 22:46:04,055 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@61a2af2d
+DEBUG 2022-09-06 22:46:04,056 [main][BasicTypeRegistry.java:145] : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4923b64f
+DEBUG 2022-09-06 22:46:04,057 [main][BasicTypeRegistry.java:145] : Adding type registration locale -> org.hibernate.type.LocaleType@e04b84a4
+DEBUG 2022-09-06 22:46:04,058 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@e04b84a4
+DEBUG 2022-09-06 22:46:04,059 [main][BasicTypeRegistry.java:145] : Adding type registration currency -> org.hibernate.type.CurrencyType@1bb562c4
+DEBUG 2022-09-06 22:46:04,059 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1bb562c4
+DEBUG 2022-09-06 22:46:04,060 [main][BasicTypeRegistry.java:145] : Adding type registration timezone -> org.hibernate.type.TimeZoneType@9d88d668
+DEBUG 2022-09-06 22:46:04,060 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@9d88d668
+DEBUG 2022-09-06 22:46:04,061 [main][BasicTypeRegistry.java:145] : Adding type registration class -> org.hibernate.type.ClassType@2ebed66f
+DEBUG 2022-09-06 22:46:04,062 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2ebed66f
+DEBUG 2022-09-06 22:46:04,063 [main][BasicTypeRegistry.java:145] : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@c9cc8359
+DEBUG 2022-09-06 22:46:04,063 [main][BasicTypeRegistry.java:145] : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@c9cc8359
+DEBUG 2022-09-06 22:46:04,064 [main][BasicTypeRegistry.java:145] : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@bb62c62d
+DEBUG 2022-09-06 22:46:04,064 [main][BasicTypeRegistry.java:145] : Adding type registration binary -> org.hibernate.type.BinaryType@88d74349
+DEBUG 2022-09-06 22:46:04,065 [main][BasicTypeRegistry.java:145] : Adding type registration byte[] -> org.hibernate.type.BinaryType@88d74349
+DEBUG 2022-09-06 22:46:04,065 [main][BasicTypeRegistry.java:145] : Adding type registration [B -> org.hibernate.type.BinaryType@88d74349
+DEBUG 2022-09-06 22:46:04,066 [main][BasicTypeRegistry.java:145] : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@67923002
+DEBUG 2022-09-06 22:46:04,067 [main][BasicTypeRegistry.java:145] : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@67923002
+DEBUG 2022-09-06 22:46:04,067 [main][BasicTypeRegistry.java:145] : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@67923002
+DEBUG 2022-09-06 22:46:04,068 [main][BasicTypeRegistry.java:145] : Adding type registration row_version -> org.hibernate.type.RowVersionType@1016ab06
+DEBUG 2022-09-06 22:46:04,069 [main][BasicTypeRegistry.java:145] : Adding type registration image -> org.hibernate.type.ImageType@856cebc5
+DEBUG 2022-09-06 22:46:04,070 [main][BasicTypeRegistry.java:145] : Adding type registration characters -> org.hibernate.type.CharArrayType@7d3b56f1
+DEBUG 2022-09-06 22:46:04,070 [main][BasicTypeRegistry.java:145] : Adding type registration char[] -> org.hibernate.type.CharArrayType@7d3b56f1
+DEBUG 2022-09-06 22:46:04,071 [main][BasicTypeRegistry.java:145] : Adding type registration [C -> org.hibernate.type.CharArrayType@7d3b56f1
+DEBUG 2022-09-06 22:46:04,072 [main][BasicTypeRegistry.java:145] : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6f6b1408
+DEBUG 2022-09-06 22:46:04,073 [main][BasicTypeRegistry.java:145] : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6f6b1408
+DEBUG 2022-09-06 22:46:04,073 [main][BasicTypeRegistry.java:145] : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6f6b1408
+DEBUG 2022-09-06 22:46:04,074 [main][BasicTypeRegistry.java:145] : Adding type registration text -> org.hibernate.type.TextType@9be84844
+DEBUG 2022-09-06 22:46:04,075 [main][BasicTypeRegistry.java:145] : Adding type registration ntext -> org.hibernate.type.NTextType@89c127e4
+DEBUG 2022-09-06 22:46:04,078 [main][BasicTypeRegistry.java:145] : Adding type registration blob -> org.hibernate.type.BlobType@34895c6
+DEBUG 2022-09-06 22:46:04,078 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@34895c6
+DEBUG 2022-09-06 22:46:04,079 [main][BasicTypeRegistry.java:145] : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@9cc7f815
+DEBUG 2022-09-06 22:46:04,082 [main][BasicTypeRegistry.java:145] : Adding type registration clob -> org.hibernate.type.ClobType@bc97385
+DEBUG 2022-09-06 22:46:04,082 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@bc97385
+DEBUG 2022-09-06 22:46:04,084 [main][BasicTypeRegistry.java:145] : Adding type registration nclob -> org.hibernate.type.NClobType@d4568bb6
+DEBUG 2022-09-06 22:46:04,085 [main][BasicTypeRegistry.java:145] : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@d4568bb6
+DEBUG 2022-09-06 22:46:04,085 [main][BasicTypeRegistry.java:145] : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@75af90ce
+DEBUG 2022-09-06 22:46:04,086 [main][BasicTypeRegistry.java:145] : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@14657b5b
+DEBUG 2022-09-06 22:46:04,087 [main][BasicTypeRegistry.java:145] : Adding type registration serializable -> org.hibernate.type.SerializableType@eb835ac1
+DEBUG 2022-09-06 22:46:04,088 [main][BasicTypeRegistry.java:145] : Adding type registration object -> org.hibernate.type.ObjectType@5d7a81ce
+DEBUG 2022-09-06 22:46:04,089 [main][BasicTypeRegistry.java:145] : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5d7a81ce
+DEBUG 2022-09-06 22:46:04,089 [main][BasicTypeRegistry.java:145] : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6a2bfdfa
+DEBUG 2022-09-06 22:46:04,090 [main][BasicTypeRegistry.java:145] : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6954a6cc
+DEBUG 2022-09-06 22:46:04,090 [main][BasicTypeRegistry.java:145] : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@786c645b
+DEBUG 2022-09-06 22:46:04,091 [main][BasicTypeRegistry.java:145] : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@34ee38c5
+DEBUG 2022-09-06 22:46:04,091 [main][BasicTypeRegistry.java:145] : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@26d75695
+DEBUG 2022-09-06 22:46:04,091 [main][BasicTypeRegistry.java:145] : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5734c8ae
+DEBUG 2022-09-06 22:46:04,092 [main][BasicTypeRegistry.java:145] : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@dc6db6d5
+DEBUG 2022-09-06 22:46:04,092 [main][BasicTypeRegistry.java:145] : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@da9e22b9
+WARN  2022-09-06 22:46:04,099 [main][DriverManagerConnectionProviderImpl.java:70] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  2022-09-06 22:46:04,106 [main][DriverManagerConnectionProviderImpl.java:126] : HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/classicmodels?serverTimezone=UTC]
+INFO  2022-09-06 22:46:04,107 [main][DriverManagerConnectionProviderImpl.java:132] : HHH10001001: Connection properties: {password=rootroot, user=root}
+INFO  2022-09-06 22:46:04,108 [main][DriverManagerConnectionProviderImpl.java:140] : HHH10001003: Autocommit mode: false
+DEBUG 2022-09-06 22:46:04,111 [main][DelegatingBasicLogger.java:384] : Initializing Connection pool with 1 Connections
+INFO  2022-09-06 22:46:04,112 [main][PooledConnections.java:41] : HHH000115: Hibernate connection pool size: 5 (min=1)
+DEBUG 2022-09-06 22:46:04,602 [main][JdbcEnvironmentInitiator.java:72] : Database ->
+       name : MySQL
+    version : 8.0.29
+      major : 8
+      minor : 0
+DEBUG 2022-09-06 22:46:04,602 [main][JdbcEnvironmentInitiator.java:83] : Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.29 (Revision: dd61577595edad45c398af508cf91ad26fc4144f)
+      major : 8
+      minor : 0
+DEBUG 2022-09-06 22:46:04,603 [main][DelegatingBasicLogger.java:389] : JDBC version : 4.2
+INFO  2022-09-06 22:46:04,609 [main][Dialect.java:153] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+DEBUG 2022-09-06 22:46:04,656 [main][IdentifierHelperBuilder.java:117] : JDBC driver metadata reported database stores quoted identifiers in more than one case
+DEBUG 2022-09-06 22:46:04,657 [main][IdentifierHelperBuilder.java:191] : IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+DEBUG 2022-09-06 22:46:04,682 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+DEBUG 2022-09-06 22:46:04,682 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+DEBUG 2022-09-06 22:46:04,684 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+DEBUG 2022-09-06 22:46:04,684 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+DEBUG 2022-09-06 22:46:04,684 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+DEBUG 2022-09-06 22:46:04,685 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+DEBUG 2022-09-06 22:46:04,685 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+DEBUG 2022-09-06 22:46:04,686 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+DEBUG 2022-09-06 22:46:04,687 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+DEBUG 2022-09-06 22:46:04,688 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+DEBUG 2022-09-06 22:46:04,688 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+DEBUG 2022-09-06 22:46:04,688 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+DEBUG 2022-09-06 22:46:04,689 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+DEBUG 2022-09-06 22:46:04,689 [main][DefaultIdentifierGeneratorFactory.java:81] : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+DEBUG 2022-09-06 22:46:04,710 [main][Namespace.java:47] : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+DEBUG 2022-09-06 22:46:04,732 [main][AnnotationBinder.java:511] : Binding entity from annotated class: org.example.models.Author
+DEBUG 2022-09-06 22:46:04,743 [main][Ejb3Column.java:213] : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+DEBUG 2022-09-06 22:46:04,747 [main][EntityBinder.java:416] : Import with entity name Author
+DEBUG 2022-09-06 22:46:04,750 [main][EntityBinder.java:692] : Bind entity org.example.models.Author on table Author
+DEBUG 2022-09-06 22:46:04,766 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Author), mappingColumn=id, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,768 [main][PropertyBinder.java:174] : MetadataSourceProcessor property id with lazy=false
+DEBUG 2022-09-06 22:46:04,769 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Author:id]
+DEBUG 2022-09-06 22:46:04,770 [main][SimpleValueBinder.java:398] : building SimpleValue for id
+DEBUG 2022-09-06 22:46:04,771 [main][PropertyBinder.java:265] : Building property id
+DEBUG 2022-09-06 22:46:04,775 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Author), mappingColumn=name, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,775 [main][PropertyBinder.java:174] : MetadataSourceProcessor property name with lazy=false
+DEBUG 2022-09-06 22:46:04,775 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Author:name]
+DEBUG 2022-09-06 22:46:04,775 [main][SimpleValueBinder.java:398] : building SimpleValue for name
+DEBUG 2022-09-06 22:46:04,776 [main][PropertyBinder.java:265] : Building property name
+DEBUG 2022-09-06 22:46:04,776 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Author), mappingColumn=salary, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,776 [main][PropertyBinder.java:174] : MetadataSourceProcessor property salary with lazy=false
+DEBUG 2022-09-06 22:46:04,777 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Author:salary]
+DEBUG 2022-09-06 22:46:04,777 [main][SimpleValueBinder.java:398] : building SimpleValue for salary
+DEBUG 2022-09-06 22:46:04,777 [main][PropertyBinder.java:265] : Building property salary
+DEBUG 2022-09-06 22:46:04,778 [main][AnnotationBinder.java:511] : Binding entity from annotated class: org.example.models.Book
+DEBUG 2022-09-06 22:46:04,778 [main][Ejb3Column.java:213] : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+DEBUG 2022-09-06 22:46:04,778 [main][EntityBinder.java:416] : Import with entity name Book
+DEBUG 2022-09-06 22:46:04,778 [main][EntityBinder.java:692] : Bind entity org.example.models.Book on table Book
+DEBUG 2022-09-06 22:46:04,779 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Book), mappingColumn=id, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,779 [main][PropertyBinder.java:174] : MetadataSourceProcessor property id with lazy=false
+DEBUG 2022-09-06 22:46:04,780 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Book:id]
+DEBUG 2022-09-06 22:46:04,780 [main][SimpleValueBinder.java:398] : building SimpleValue for id
+DEBUG 2022-09-06 22:46:04,780 [main][PropertyBinder.java:265] : Building property id
+DEBUG 2022-09-06 22:46:04,780 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Book), mappingColumn=author_id, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,780 [main][PropertyBinder.java:174] : MetadataSourceProcessor property author_id with lazy=false
+DEBUG 2022-09-06 22:46:04,781 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Book:author_id]
+DEBUG 2022-09-06 22:46:04,781 [main][SimpleValueBinder.java:398] : building SimpleValue for author_id
+DEBUG 2022-09-06 22:46:04,781 [main][PropertyBinder.java:265] : Building property author_id
+DEBUG 2022-09-06 22:46:04,782 [main][Ejb3Column.java:213] : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Book), mappingColumn=name, insertable=true, updatable=true, unique=false}
+DEBUG 2022-09-06 22:46:04,783 [main][PropertyBinder.java:174] : MetadataSourceProcessor property name with lazy=false
+DEBUG 2022-09-06 22:46:04,783 [main][AbstractPropertyHolder.java:89] : Attempting to locate auto-apply AttributeConverter for property [org.example.models.Book:name]
+DEBUG 2022-09-06 22:46:04,783 [main][SimpleValueBinder.java:398] : building SimpleValue for name
+DEBUG 2022-09-06 22:46:04,783 [main][PropertyBinder.java:265] : Building property name
+DEBUG 2022-09-06 22:46:04,784 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for id
+DEBUG 2022-09-06 22:46:04,784 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for name
+DEBUG 2022-09-06 22:46:04,785 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for salary
+DEBUG 2022-09-06 22:46:04,785 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for id
+DEBUG 2022-09-06 22:46:04,785 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for author_id
+DEBUG 2022-09-06 22:46:04,785 [main][SimpleValueBinder.java:443] : Starting fillSimpleValue for name
+DEBUG 2022-09-06 22:46:04,786 [main][PrimaryKey.java:35] : Forcing column [id] to be non-null as it is part of the primary key for table [author]
+DEBUG 2022-09-06 22:46:04,786 [main][PrimaryKey.java:35] : Forcing column [id] to be non-null as it is part of the primary key for table [book]
+DEBUG 2022-09-06 22:46:04,813 [main][SessionFactoryImpl.java:197] : Building session factory
+DEBUG 2022-09-06 22:46:04,813 [main][Settings.java:69] : SessionFactory name : null
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:70] : Automatic flush during beforeCompletion(): enabled
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:71] : Automatic session close at end of transaction: disabled
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:73] : Statistics: disabled
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:75] : Deleted entity synthetic identifier rollback: disabled
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:76] : Default entity-mode: pojo
+DEBUG 2022-09-06 22:46:04,814 [main][Settings.java:77] : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+DEBUG 2022-09-06 22:46:04,815 [main][Settings.java:78] : Allow initialization of lazy state outside session : disabled
+DEBUG 2022-09-06 22:46:04,815 [main][Settings.java:80] : Using BatchFetchStyle : LEGACY
+DEBUG 2022-09-06 22:46:04,815 [main][Settings.java:81] : Default batch fetch size: -1
+DEBUG 2022-09-06 22:46:04,815 [main][Settings.java:82] : Maximum outer join fetch depth: 2
+DEBUG 2022-09-06 22:46:04,815 [main][Settings.java:83] : Default null ordering: NONE
+DEBUG 2022-09-06 22:46:04,816 [main][Settings.java:84] : Order SQL updates by primary key: disabled
+DEBUG 2022-09-06 22:46:04,816 [main][Settings.java:85] : Order SQL inserts for batching: disabled
+DEBUG 2022-09-06 22:46:04,816 [main][Settings.java:87] : multi-tenancy strategy : NONE
+DEBUG 2022-09-06 22:46:04,816 [main][Settings.java:89] : JTA Track by Thread: enabled
+DEBUG 2022-09-06 22:46:04,816 [main][Settings.java:91] : Query language substitutions: {}
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:92] : JPA query language strict compliance: disabled
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:93] : Named query checking : enabled
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:95] : Second-level cache: enabled
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:96] : Second-level query cache: disabled
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:97] : Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@a7a2a3d3
+DEBUG 2022-09-06 22:46:04,817 [main][Settings.java:98] : Second-level cache region prefix: null
+DEBUG 2022-09-06 22:46:04,818 [main][Settings.java:99] : Optimize second-level cache for minimal puts: disabled
+DEBUG 2022-09-06 22:46:04,818 [main][Settings.java:100] : Structured second-level cache entries: disabled
+DEBUG 2022-09-06 22:46:04,818 [main][Settings.java:101] : Second-level cache direct-reference entries: disabled
+DEBUG 2022-09-06 22:46:04,818 [main][Settings.java:102] : Automatic eviction of collection cache: disabled
+DEBUG 2022-09-06 22:46:04,818 [main][Settings.java:104] : JDBC batch size: 15
+DEBUG 2022-09-06 22:46:04,819 [main][Settings.java:105] : JDBC batch updates for versioned data: enabled
+DEBUG 2022-09-06 22:46:04,819 [main][Settings.java:106] : Scrollable result sets: enabled
+DEBUG 2022-09-06 22:46:04,819 [main][Settings.java:107] : Wrap result sets: disabled
+DEBUG 2022-09-06 22:46:04,819 [main][Settings.java:108] : JDBC3 getGeneratedKeys(): enabled
+DEBUG 2022-09-06 22:46:04,820 [main][Settings.java:109] : JDBC result set fetch size: null
+DEBUG 2022-09-06 22:46:04,820 [main][Settings.java:110] : Connection release mode: AFTER_TRANSACTION
+DEBUG 2022-09-06 22:46:04,820 [main][Settings.java:111] : Generate SQL with comments: disabled
+DEBUG 2022-09-06 22:46:04,851 [main][SessionFactoryImpl.java:252] : Session factory constructed with filter configurations : {}
+DEBUG 2022-09-06 22:46:04,851 [main][SessionFactoryImpl.java:253] : Instantiating session factory with properties: {awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, file.encoding.pkg=sun.io, jdk.extensions.version=11.0.15.0, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=/Users/vdonets/IdeaProjects/testmaven/target/classes:/Users/vdonets/.m2/repository/org/hibernate/hibernate-core/5.2.2.Final/hibernate-core-5.2.2.Final.jar:/Users/vdonets/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/Users/vdonets/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/vdonets/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/vdonets/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/vdonets/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar:/Users/vdonets/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/Users/vdonets/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar:/Users/vdonets/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/vdonets/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/Users/vdonets/.m2/repository/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar:/Users/vdonets/.m2/repository/javax/el/el-api/2.2/el-api-2.2.jar:/Users/vdonets/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar:/Users/vdonets/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/vdonets/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/vdonets/.m2/repository/mysql/mysql-connector-java/8.0.29/mysql-connector-java-8.0.29.jar:/Users/vdonets/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:/Users/vdonets/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/vdonets/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/vdonets/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar:/Users/vdonets/.m2/repository/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar:/Users/vdonets/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar:/Users/vdonets/.m2/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar:/Users/vdonets/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar:/Users/vdonets/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Users/vdonets/Library/Caches/JetBrains/IntelliJIdea2022.1/captureAgent/debugger-agent.jar, java.vm.vendor=Eclipse OpenJ9, sun.arch.data.model=64, com.ibm.vm.bitmode=64, hbm2ddl.auto=create-drop, user.variant=, com.ibm.oti.vm.library.version=29, java.vendor.url=https://www.ibm.com/semeru-runtimes, user.timezone=Europe/Warsaw, java.vm.specification.version=11, os.name=Mac OS X, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib/default:/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib, sun.java.command=org.example.Main, sun.cpu.endian=little, user.home=/Users/vdonets, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2022-04-19, java.home=/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home, ibm.signalhandling.rs=false, jdk.extensions.name=Extensions for OpenJDK for Eclipse OpenJ9, file.separator=/, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, intellij.debug.agent=true, java.compiler=j9jit29, com.ibm.util.extralibs.properties=, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, com.ibm.oti.configuration=scar, com.ibm.oti.shared.enabled=false, hibernate.hbm2ddl.auto=create-drop, com.ibm.oti.vm.bootstrap.library.path=/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib/default:/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib, com.ibm.cpu.endian=little, java.fullversion=11.0.15-ea+10
+JRE 11 Mac OS X aarch64-64-Bit 20220422_36 (JIT enabled, AOT enabled)
+OpenJ9   - 9a84ec34e
+OMR      - ab24b6666
+JCL      - b7b5b42ea6 based on jdk-11.0.15+10, java.runtime.version=11.0.15-ea+10, user.name=vdonets, path.separator=:, hibernate.connection.username=root, os.version=12.5, java.runtime.name=IBM Semeru Runtime Open Edition, hibernate.connection.url=jdbc:mysql://localhost:3306/classicmodels?serverTimezone=UTC, connection.pool_size=5, ibm.signalhandling.sigint=true, file.encoding=UTF-8, java.vm.name=Eclipse OpenJ9 VM, hibernate.show_sql=true, java.vendor.version=11.0.15.0, ibm.signalhandling.sigchain=true, show_sql=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/ibmruntimes/Semeru-Runtimes/issues, java.io.tmpdir=/var/folders/wv/6c3_66yd6kq3r7z477kwz4lr0000gn/T/, java.version=11.0.15-ea, jboss.modules.system.pkgs=com.intellij.rt, com.ibm.system.agent.path=/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib, user.dir=/Users/vdonets/IdeaProjects/testmaven, os.arch=aarch64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, os.encoding=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@980dd735, java.library.path=/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib/default:/Users/vdonets/Library/Java/JavaVirtualMachines/semeru-11.0.15/Contents/Home/lib:/usr/lib, java.vendor=IBM Corporation, java.vm.info=JRE 11 Mac OS X aarch64-64-Bit 20220422_36 (JIT enabled, AOT enabled)
+OpenJ9   - 9a84ec34e
+OMR      - ab24b6666
+JCL      - b7b5b42ea6 based on jdk-11.0.15+10, java.vm.version=openj9-0.32.0, ibm.system.encoding=UTF-8, hibernate.bytecode.use_reflection_optimizer=false, com.ibm.jcl.checkClassPath=, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=5, java.class.version=55.0}
+DEBUG 2022-09-06 22:46:04,859 [main][JaccIntegrator.java:80] : Skipping JACC integration as it was not enabled
+DEBUG 2022-09-06 22:46:04,860 [main][SessionFactoryImpl.java:292] : Instantiated session factory
+DEBUG 2022-09-06 22:46:04,884 [main][ClassLoaderAccessImpl.java:55] : Not known whether passed class name [org.example.models.Book] is safe
+DEBUG 2022-09-06 22:46:04,884 [main][ClassLoaderAccessImpl.java:57] : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.example.models.Book
+DEBUG 2022-09-06 22:46:04,891 [main][ClassLoaderAccessImpl.java:55] : Not known whether passed class name [org.example.models.Book] is safe
+DEBUG 2022-09-06 22:46:04,891 [main][ClassLoaderAccessImpl.java:57] : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.example.models.Book
+DEBUG 2022-09-06 22:46:04,919 [main][ClassLoaderAccessImpl.java:55] : Not known whether passed class name [org.example.models.Author] is safe
+DEBUG 2022-09-06 22:46:04,920 [main][ClassLoaderAccessImpl.java:57] : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.example.models.Author
+DEBUG 2022-09-06 22:46:04,920 [main][ClassLoaderAccessImpl.java:55] : Not known whether passed class name [org.example.models.Author] is safe
+DEBUG 2022-09-06 22:46:04,920 [main][ClassLoaderAccessImpl.java:57] : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : org.example.models.Author
+DEBUG 2022-09-06 22:46:04,925 [main][AbstractEntityPersister.java:3529] : Static SQL for entity: org.example.models.Book
+DEBUG 2022-09-06 22:46:04,925 [main][AbstractEntityPersister.java:3534] :  Version select: select id from Book where id =?
+DEBUG 2022-09-06 22:46:04,925 [main][AbstractEntityPersister.java:3537] :  Snapshot select: select book_.id, book_.author_id as author_i2_1_, book_.name as name3_1_ from Book book_ where book_.id=?
+DEBUG 2022-09-06 22:46:04,926 [main][DelegatingBasicLogger.java:394] :  Insert 0: insert into Book (author_id, name, id) values (?, ?, ?)
+DEBUG 2022-09-06 22:46:04,926 [main][DelegatingBasicLogger.java:394] :  Update 0: update Book set author_id=?, name=? where id=?
+DEBUG 2022-09-06 22:46:04,926 [main][DelegatingBasicLogger.java:394] :  Delete 0: delete from Book where id=?
+DEBUG 2022-09-06 22:46:04,936 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c4809612]
+DEBUG 2022-09-06 22:46:04,936 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,937 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,937 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,943 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,944 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,945 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [NONE]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,946 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c78ef2]
+DEBUG 2022-09-06 22:46:04,946 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,946 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,946 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,946 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,947 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,947 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [READ]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,947 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@fb90095c]
+DEBUG 2022-09-06 22:46:04,947 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,948 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,948 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,948 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,948 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,949 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [UPGRADE]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,949 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b45cb53d]
+DEBUG 2022-09-06 22:46:04,949 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,949 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,949 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,950 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,950 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,950 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [UPGRADE_NOWAIT]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,950 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ffca7ed6]
+DEBUG 2022-09-06 22:46:04,951 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,951 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,951 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,952 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,952 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,953 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [UPGRADE_SKIPLOCKED]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,953 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ee926297]
+DEBUG 2022-09-06 22:46:04,953 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,953 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,954 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,954 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,954 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,954 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [FORCE]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,955 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4fa252af]
+DEBUG 2022-09-06 22:46:04,955 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,955 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,955 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,955 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,956 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,956 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [PESSIMISTIC_READ]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? lock in share mode
+DEBUG 2022-09-06 22:46:04,956 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@85004389]
+DEBUG 2022-09-06 22:46:04,956 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,956 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,957 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,957 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,957 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,957 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [PESSIMISTIC_WRITE]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,958 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@412cb3fa]
+DEBUG 2022-09-06 22:46:04,958 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,958 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,958 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,958 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,959 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,959 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [PESSIMISTIC_FORCE_INCREMENT]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=? for update
+DEBUG 2022-09-06 22:46:04,959 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2fc4b787]
+DEBUG 2022-09-06 22:46:04,959 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,960 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,960 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,960 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,961 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,962 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [OPTIMISTIC]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,962 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9eba6f7e]
+DEBUG 2022-09-06 22:46:04,962 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : author_id
+DEBUG 2022-09-06 22:46:04,962 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,963 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,963 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,963 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Book)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Book, querySpaceUid=<gen:0>, path=org.example.models.Book)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Book)
+          - SQL table alias mapping - book0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+DEBUG 2022-09-06 22:46:04,963 [main][EntityLoader.java:115] : Static select for entity org.example.models.Book [OPTIMISTIC_FORCE_INCREMENT]: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,970 [main][CascadeEntityLoader.java:38] : Static select for action ACTION_MERGE on entity org.example.models.Book: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,970 [main][CascadeEntityLoader.java:38] : Static select for action ACTION_REFRESH on entity org.example.models.Book: select book0_.id as id1_1_0_, book0_.author_id as author_i2_1_0_, book0_.name as name3_1_0_ from Book book0_ where book0_.id=?
+DEBUG 2022-09-06 22:46:04,971 [main][AbstractEntityPersister.java:3529] : Static SQL for entity: org.example.models.Author
+DEBUG 2022-09-06 22:46:04,971 [main][AbstractEntityPersister.java:3534] :  Version select: select id from Author where id =?
+DEBUG 2022-09-06 22:46:04,972 [main][AbstractEntityPersister.java:3537] :  Snapshot select: select author_.id, author_.name as name2_0_, author_.salary as salary3_0_ from Author author_ where author_.id=?
+DEBUG 2022-09-06 22:46:04,972 [main][DelegatingBasicLogger.java:394] :  Insert 0: insert into Author (name, salary, id) values (?, ?, ?)
+DEBUG 2022-09-06 22:46:04,972 [main][DelegatingBasicLogger.java:394] :  Update 0: update Author set name=?, salary=? where id=?
+DEBUG 2022-09-06 22:46:04,972 [main][DelegatingBasicLogger.java:394] :  Delete 0: delete from Author where id=?
+DEBUG 2022-09-06 22:46:04,972 [main][AbstractEntityPersister.java:3545] :  Identity insert: insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:04,972 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dfe000e7]
+DEBUG 2022-09-06 22:46:04,973 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,973 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,973 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,973 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,974 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,974 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [NONE]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:04,974 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69440409]
+DEBUG 2022-09-06 22:46:04,975 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,975 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,976 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,976 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,976 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,976 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [READ]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:04,977 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26e3bd0b]
+DEBUG 2022-09-06 22:46:04,977 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,977 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,977 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,977 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,978 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,978 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [UPGRADE]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,978 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@502ae850]
+DEBUG 2022-09-06 22:46:04,978 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,978 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,979 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,979 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,979 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,979 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [UPGRADE_NOWAIT]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,980 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8de329cd]
+DEBUG 2022-09-06 22:46:04,980 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,980 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,980 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,980 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,981 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,981 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [UPGRADE_SKIPLOCKED]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,981 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@218eee9f]
+DEBUG 2022-09-06 22:46:04,981 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,982 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,982 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,982 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,982 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,982 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [FORCE]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,983 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17f5be45]
+DEBUG 2022-09-06 22:46:04,983 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,983 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,983 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,983 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,984 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,985 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [PESSIMISTIC_READ]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? lock in share mode
+DEBUG 2022-09-06 22:46:04,985 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9865bb06]
+DEBUG 2022-09-06 22:46:04,985 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,985 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,985 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,986 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,986 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,986 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [PESSIMISTIC_WRITE]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,987 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@127e2c10]
+DEBUG 2022-09-06 22:46:04,987 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,987 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,987 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,987 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,988 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,988 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [PESSIMISTIC_FORCE_INCREMENT]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=? for update
+DEBUG 2022-09-06 22:46:04,988 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7670d1cf]
+DEBUG 2022-09-06 22:46:04,988 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,989 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,989 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,989 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,989 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,990 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [OPTIMISTIC]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:04,990 [main][QuerySpacesImpl.java:174] : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@34f55e10]
+DEBUG 2022-09-06 22:46:04,990 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : name
+DEBUG 2022-09-06 22:46:04,990 [main][MetamodelGraphWalker.java:137] : Visiting attribute path : salary
+DEBUG 2022-09-06 22:46:04,990 [main][FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java:150] : Building LoadPlan...
+DEBUG 2022-09-06 22:46:04,991 [main][LoadQueryJoinAndFetchProcessor.java:100] : processing queryspace <gen:0>
+DEBUG 2022-09-06 22:46:04,991 [main][LoadPlanTreePrinter.java:55] : LoadPlan(entity=org.example.models.Author)
+    - Returns
+       - EntityReturnImpl(entity=org.example.models.Author, querySpaceUid=<gen:0>, path=org.example.models.Author)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=org.example.models.Author)
+          - SQL table alias mapping - author0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG 2022-09-06 22:46:04,991 [main][EntityLoader.java:115] : Static select for entity org.example.models.Author [OPTIMISTIC_FORCE_INCREMENT]: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:04,992 [main][CascadeEntityLoader.java:38] : Static select for action ACTION_MERGE on entity org.example.models.Author: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:04,992 [main][CascadeEntityLoader.java:38] : Static select for action ACTION_REFRESH on entity org.example.models.Author: select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:05,006 [main][SqlStatementLogger.java:92] : drop table if exists Author
+INFO  2022-09-06 22:46:05,008 [main][DdlTransactionIsolatorNonJtaImpl.java:48] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6eaa912a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+DEBUG 2022-09-06 22:46:05,018 [main][SqlStatementLogger.java:92] : drop table if exists Book
+DEBUG 2022-09-06 22:46:05,022 [main][SqlStatementLogger.java:92] : drop table if exists hibernate_sequence
+DEBUG 2022-09-06 22:46:05,028 [main][SqlStatementLogger.java:92] : create table Author (id bigint not null auto_increment, name varchar(255), salary integer, primary key (id))
+INFO  2022-09-06 22:46:05,029 [main][DdlTransactionIsolatorNonJtaImpl.java:48] : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@cde38d13] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+DEBUG 2022-09-06 22:46:05,036 [main][SqlStatementLogger.java:92] : create table Book (id bigint not null, author_id bigint not null, name varchar(255), primary key (id))
+DEBUG 2022-09-06 22:46:05,043 [main][SqlStatementLogger.java:92] : create table hibernate_sequence (next_val bigint)
+DEBUG 2022-09-06 22:46:05,047 [main][SqlStatementLogger.java:92] : insert into hibernate_sequence values ( 1 )
+INFO  2022-09-06 22:46:05,050 [main][SchemaCreatorImpl.java:485] : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@be464ab0'
+DEBUG 2022-09-06 22:46:05,051 [main][JtaPlatformInitiator.java:42] : No JtaPlatform was specified, checking resolver
+DEBUG 2022-09-06 22:46:05,053 [main][JtaPlatformResolverInitiator.java:33] : No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+DEBUG 2022-09-06 22:46:05,055 [main][StandardJtaPlatformResolver.java:101] : Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+DEBUG 2022-09-06 22:46:05,055 [main][NamedQueryRepository.java:151] : Checking 0 named HQL queries
+DEBUG 2022-09-06 22:46:05,055 [main][NamedQueryRepository.java:167] : Checking 0 named SQL queries
+DEBUG 2022-09-06 22:46:05,056 [main][SessionFactoryRegistry.java:52] : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@abe32b16
+DEBUG 2022-09-06 22:46:05,057 [main][SessionFactoryRegistry.java:74] : Registering SessionFactory: 3dbca64c-4aa0-48bb-999b-62c73199474d (<unnamed>)
+DEBUG 2022-09-06 22:46:05,058 [main][SessionFactoryRegistry.java:81] : Not binding SessionFactory to JNDI, no JNDI name configured
+DEBUG 2022-09-06 22:46:05,087 [main][StatisticsInitiator.java:82] : Statistics initialized [enabled=false]
+DEBUG 2022-09-06 22:46:05,091 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,097 [main][ActionQueue.java:272] : Executing identity-insert immediately
+DEBUG 2022-09-06 22:46:05,099 [main][SqlStatementLogger.java:92] : insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:05,108 [main][IdentifierGeneratorHelper.java:78] : Natively generated identity: 1
+DEBUG 2022-09-06 22:46:05,108 [main][ResourceRegistryStandardImpl.java:104] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,109 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,110 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,110 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,111 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,111 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,112 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,113 [main][EntityPrinter.java:109] : org.example.models.Author{name=David Baldacci, id=1, salary=1703}
+DEBUG 2022-09-06 22:46:05,115 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,115 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,133 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,134 [main][ActionQueue.java:272] : Executing identity-insert immediately
+DEBUG 2022-09-06 22:46:05,135 [main][SqlStatementLogger.java:92] : insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:05,136 [main][IdentifierGeneratorHelper.java:78] : Natively generated identity: 2
+DEBUG 2022-09-06 22:46:05,137 [main][ResourceRegistryStandardImpl.java:104] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,137 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,137 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,137 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,137 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,138 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,138 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,138 [main][EntityPrinter.java:109] : org.example.models.Author{name=Colleen Hoover, id=2, salary=4280}
+DEBUG 2022-09-06 22:46:05,139 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,139 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,139 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,140 [main][ActionQueue.java:272] : Executing identity-insert immediately
+DEBUG 2022-09-06 22:46:05,140 [main][SqlStatementLogger.java:92] : insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:05,141 [main][IdentifierGeneratorHelper.java:78] : Natively generated identity: 3
+DEBUG 2022-09-06 22:46:05,142 [main][ResourceRegistryStandardImpl.java:104] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,142 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,142 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,142 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,142 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,142 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,144 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,144 [main][EntityPrinter.java:109] : org.example.models.Author{name=Stuart Woods, id=3, salary=1533}
+DEBUG 2022-09-06 22:46:05,145 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,145 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,146 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,147 [main][ActionQueue.java:272] : Executing identity-insert immediately
+DEBUG 2022-09-06 22:46:05,147 [main][SqlStatementLogger.java:92] : insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:05,148 [main][IdentifierGeneratorHelper.java:78] : Natively generated identity: 4
+DEBUG 2022-09-06 22:46:05,148 [main][ResourceRegistryStandardImpl.java:104] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,148 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,148 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,148 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,148 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,149 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,149 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,149 [main][EntityPrinter.java:109] : org.example.models.Author{name=Nora Roberts, id=4, salary=4626}
+DEBUG 2022-09-06 22:46:05,149 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,150 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,150 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,151 [main][ActionQueue.java:272] : Executing identity-insert immediately
+DEBUG 2022-09-06 22:46:05,151 [main][SqlStatementLogger.java:92] : insert into Author (name, salary) values (?, ?)
+DEBUG 2022-09-06 22:46:05,153 [main][IdentifierGeneratorHelper.java:78] : Natively generated identity: 5
+DEBUG 2022-09-06 22:46:05,153 [main][ResourceRegistryStandardImpl.java:104] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,153 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,153 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,153 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,153 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,154 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,154 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,154 [main][EntityPrinter.java:109] : org.example.models.Author{name=Michael Connelly, id=5, salary=3194}
+DEBUG 2022-09-06 22:46:05,155 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,155 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,165 [main][CriteriaQueryImpl.java:307] : Rendered criteria query -> select generatedAlias0 from Author as generatedAlias0
+DEBUG 2022-09-06 22:46:05,172 [main][QueryTranslatorFactoryInitiator.java:45] : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@4bd72162
+INFO  2022-09-06 22:46:05,173 [main][QueryTranslatorFactoryInitiator.java:47] : HHH000397: Using ASTQueryTranslatorFactory
+DEBUG 2022-09-06 22:46:05,190 [main][QueryTranslatorImpl.java:278] : parse() - HQL: select generatedAlias0 from org.example.models.Author as generatedAlias0
+DEBUG 2022-09-06 22:46:05,194 [main][QueryTranslatorImpl.java:296] : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'org'
+       |     |  |  |  \-[IDENT] Node: 'example'
+       |     |  |  \-[IDENT] Node: 'models'
+       |     |  \-[IDENT] Node: 'Author'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+DEBUG 2022-09-06 22:46:05,194 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,204 [main][HqlSqlBaseWalker.java:124] : select << begin [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,209 [main][FromElement.java:148] : FromClause{level=1} : org.example.models.Author (generatedAlias0) -> author0_
+DEBUG 2022-09-06 22:46:05,210 [main][FromReferenceNode.java:60] : Resolved : generatedAlias0 -> author0_.id
+DEBUG 2022-09-06 22:46:05,210 [main][HqlSqlBaseWalker.java:128] : select : finishing up [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,211 [main][HqlSqlWalker.java:725] : processQuery() :  ( SELECT ( {select clause} author0_.id ) ( FromClause{level=1} Author author0_ ) )
+DEBUG 2022-09-06 22:46:05,215 [main][JoinProcessor.java:169] : Using FROM fragment [Author author0_]
+DEBUG 2022-09-06 22:46:05,215 [main][HqlSqlBaseWalker.java:132] : select >> end [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,215 [main][QueryTranslatorImpl.java:265] : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Author)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'author0_.id as id1_0_' {alias=generatedAlias0, className=org.example.models.Author, tableAlias=author0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'author0_.name as name2_0_, author0_.salary as salary3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[author0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Author author0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=Author,tableAlias=author0_,origin=null,columns={,className=org.example.models.Author}}
+
+DEBUG 2022-09-06 22:46:05,215 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,218 [main][QueryTranslatorImpl.java:247] : HQL: select generatedAlias0 from org.example.models.Author as generatedAlias0
+DEBUG 2022-09-06 22:46:05,218 [main][QueryTranslatorImpl.java:248] : SQL: select author0_.id as id1_0_, author0_.name as name2_0_, author0_.salary as salary3_0_ from Author author0_
+DEBUG 2022-09-06 22:46:05,218 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,225 [main][SqlStatementLogger.java:92] : select author0_.id as id1_0_, author0_.name as name2_0_, author0_.salary as salary3_0_ from Author author0_
+DEBUG 2022-09-06 22:46:05,227 [main][DelegatingBasicLogger.java:384] : Result set row: 0
+DEBUG 2022-09-06 22:46:05,229 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,231 [main][DelegatingBasicLogger.java:384] : Result set row: 1
+DEBUG 2022-09-06 22:46:05,231 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,232 [main][DelegatingBasicLogger.java:384] : Result set row: 2
+DEBUG 2022-09-06 22:46:05,232 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,232 [main][DelegatingBasicLogger.java:384] : Result set row: 3
+DEBUG 2022-09-06 22:46:05,232 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,232 [main][DelegatingBasicLogger.java:384] : Result set row: 4
+DEBUG 2022-09-06 22:46:05,232 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,233 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,233 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,233 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,233 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,234 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,235 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,249 [main][SqlStatementLogger.java:92] : SELECT * FROM Author
+DEBUG 2022-09-06 22:46:05,251 [main][DelegatingBasicLogger.java:384] : Result set row: 0
+DEBUG 2022-09-06 22:46:05,251 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,251 [main][DelegatingBasicLogger.java:384] : Result set row: 1
+DEBUG 2022-09-06 22:46:05,251 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,252 [main][DelegatingBasicLogger.java:384] : Result set row: 2
+DEBUG 2022-09-06 22:46:05,252 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,252 [main][DelegatingBasicLogger.java:384] : Result set row: 3
+DEBUG 2022-09-06 22:46:05,252 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,252 [main][DelegatingBasicLogger.java:384] : Result set row: 4
+DEBUG 2022-09-06 22:46:05,252 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#1]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,253 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#3]
+DEBUG 2022-09-06 22:46:05,254 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,254 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#4]
+DEBUG 2022-09-06 22:46:05,254 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,254 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,254 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,257 [main][SqlStatementLogger.java:92] : select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:05,260 [main][ResultSetProcessorImpl.java:120] : Starting ResultSet row #0
+DEBUG 2022-09-06 22:46:05,261 [main][EntityReferenceInitializerImpl.java:126] : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+DEBUG 2022-09-06 22:46:05,261 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,261 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,262 [main][ResourceRegistryStandardImpl.java:73] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,262 [main][AbstractLoadPlanBasedEntityLoader.java:189] : Done entity load : org.example.models.Author#2
+DEBUG 2022-09-06 22:46:05,262 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,265 [main][QueryTranslatorImpl.java:278] : parse() - HQL: select a from org.example.models.Author a where a.salary between :minSalary and :maxSalary
+DEBUG 2022-09-06 22:46:05,266 [main][QueryTranslatorImpl.java:296] : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'org'
+    |  |     |  |  |  \-[IDENT] Node: 'example'
+    |  |     |  |  \-[IDENT] Node: 'models'
+    |  |     |  \-[IDENT] Node: 'Author'
+    |  |     \-[ALIAS] Node: 'a'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'a'
+    \-[WHERE] Node: 'where'
+       \-[BETWEEN] Node: 'between'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'a'
+          |  \-[IDENT] Node: 'salary'
+          +-[COLON] Node: ':'
+          |  \-[IDENT] Node: 'minSalary'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'maxSalary'
+
+DEBUG 2022-09-06 22:46:05,266 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,267 [main][HqlSqlBaseWalker.java:124] : select << begin [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,267 [main][FromElement.java:148] : FromClause{level=1} : org.example.models.Author (a) -> author0_
+DEBUG 2022-09-06 22:46:05,268 [main][FromReferenceNode.java:60] : Resolved : a -> author0_.id
+DEBUG 2022-09-06 22:46:05,269 [main][FromReferenceNode.java:60] : Resolved : a -> author0_.id
+DEBUG 2022-09-06 22:46:05,270 [main][DotNode.java:661] : getDataType() : salary -> org.hibernate.type.IntegerType@2494b617
+DEBUG 2022-09-06 22:46:05,270 [main][FromReferenceNode.java:60] : Resolved : a.salary -> author0_.salary
+DEBUG 2022-09-06 22:46:05,271 [main][HqlSqlBaseWalker.java:128] : select : finishing up [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,271 [main][HqlSqlWalker.java:725] : processQuery() :  ( SELECT ( {select clause} author0_.id ) ( FromClause{level=1} Author author0_ ) ( where ( between ( author0_.salary author0_.id salary ) ? ? ) ) )
+DEBUG 2022-09-06 22:46:05,271 [main][JoinProcessor.java:169] : Using FROM fragment [Author author0_]
+DEBUG 2022-09-06 22:46:05,271 [main][HqlSqlBaseWalker.java:132] : select >> end [level=1, statement=select]
+DEBUG 2022-09-06 22:46:05,272 [main][QueryTranslatorImpl.java:265] : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Author)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'author0_.id as id1_0_' {alias=a, className=org.example.models.Author, tableAlias=author0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'author0_.name as name2_0_, author0_.salary as salary3_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[author0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Author author0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Author,tableAlias=author0_,origin=null,columns={,className=org.example.models.Author}}
+    \-[WHERE] SqlNode: 'where'
+       \-[BETWEEN] BetweenOperatorNode: 'between'
+          +-[DOT] DotNode: 'author0_.salary' {propertyName=salary,dereferenceType=PRIMITIVE,getPropertyPath=salary,path=a.salary,tableAlias=author0_,className=org.example.models.Author,classAlias=a}
+          |  +-[ALIAS_REF] IdentNode: 'author0_.id' {alias=a, className=org.example.models.Author, tableAlias=author0_}
+          |  \-[IDENT] IdentNode: 'salary' {originalText=salary}
+          +-[NAMED_PARAM] ParameterNode: '?' {name=minSalary, expectedType=org.hibernate.type.IntegerType@2494b617}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=maxSalary, expectedType=org.hibernate.type.IntegerType@2494b617}
+
+DEBUG 2022-09-06 22:46:05,272 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,272 [main][QueryTranslatorImpl.java:247] : HQL: select a from org.example.models.Author a where a.salary between :minSalary and :maxSalary
+DEBUG 2022-09-06 22:46:05,273 [main][QueryTranslatorImpl.java:248] : SQL: select author0_.id as id1_0_, author0_.name as name2_0_, author0_.salary as salary3_0_ from Author author0_ where author0_.salary between ? and ?
+DEBUG 2022-09-06 22:46:05,273 [main][ErrorCounter.java:95] : throwQueryException() : no errors
+DEBUG 2022-09-06 22:46:05,274 [main][SqlStatementLogger.java:92] : select author0_.id as id1_0_, author0_.name as name2_0_, author0_.salary as salary3_0_ from Author author0_ where author0_.salary between ? and ?
+DEBUG 2022-09-06 22:46:05,276 [main][DelegatingBasicLogger.java:384] : Result set row: 0
+DEBUG 2022-09-06 22:46:05,276 [main][Loader.java:1527] : Result row: EntityKey[org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,277 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,277 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#5]
+DEBUG 2022-09-06 22:46:05,277 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,278 [main][SqlStatementLogger.java:92] : select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:05,280 [main][ResultSetProcessorImpl.java:120] : Starting ResultSet row #0
+DEBUG 2022-09-06 22:46:05,280 [main][EntityReferenceInitializerImpl.java:126] : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+DEBUG 2022-09-06 22:46:05,281 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,281 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,281 [main][ResourceRegistryStandardImpl.java:73] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,281 [main][AbstractLoadPlanBasedEntityLoader.java:189] : Done entity load : org.example.models.Author#2
+DEBUG 2022-09-06 22:46:05,281 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,281 [main][TransactionImpl.java:55] : begin
+DEBUG 2022-09-06 22:46:05,282 [main][TransactionImpl.java:66] : committing
+DEBUG 2022-09-06 22:46:05,282 [main][AbstractFlushingEventListener.java:132] : Processing flush-time cascades
+DEBUG 2022-09-06 22:46:05,283 [main][AbstractFlushingEventListener.java:174] : Dirty checking collections
+DEBUG 2022-09-06 22:46:05,283 [main][AbstractFlushingEventListener.java:106] : Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+DEBUG 2022-09-06 22:46:05,284 [main][AbstractFlushingEventListener.java:113] : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 2022-09-06 22:46:05,284 [main][EntityPrinter.java:102] : Listing entities:
+DEBUG 2022-09-06 22:46:05,284 [main][EntityPrinter.java:109] : org.example.models.Author{name=Ihor Kosolapow, id=2, salary=4280}
+DEBUG 2022-09-06 22:46:05,288 [main][SqlStatementLogger.java:92] : update Author set name=? where id=?
+DEBUG 2022-09-06 22:46:05,291 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,291 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
+DEBUG 2022-09-06 22:46:05,291 [main][JdbcCoordinatorImpl.java:177] : HHH000420: Closing un-released batch
+DEBUG 2022-09-06 22:46:05,292 [main][SqlStatementLogger.java:92] : select author0_.id as id1_0_0_, author0_.name as name2_0_0_, author0_.salary as salary3_0_0_ from Author author0_ where author0_.id=?
+DEBUG 2022-09-06 22:46:05,294 [main][ResultSetProcessorImpl.java:120] : Starting ResultSet row #0
+DEBUG 2022-09-06 22:46:05,294 [main][EntityReferenceInitializerImpl.java:126] : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+DEBUG 2022-09-06 22:46:05,294 [main][TwoPhaseLoad.java:141] : Resolving associations for [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,294 [main][TwoPhaseLoad.java:267] : Done materializing entity [org.example.models.Author#2]
+DEBUG 2022-09-06 22:46:05,294 [main][ResourceRegistryStandardImpl.java:73] : HHH000387: ResultSet's statement was not registered
+DEBUG 2022-09-06 22:46:05,295 [main][AbstractLoadPlanBasedEntityLoader.java:189] : Done entity load : org.example.models.Author#2
+DEBUG 2022-09-06 22:46:05,295 [main][LogicalConnectionManagedImpl.java:154] : Initiating JDBC connection release from afterTransaction
