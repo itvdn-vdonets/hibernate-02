@@ -9,6 +9,7 @@ import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -32,6 +33,30 @@ public class AuthorRepository {
         List<Author> results = query.getResultList();
         session.close();
         return results;
+    }
+
+    public Double getAverageSalary() {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Double> cr = cb.createQuery(Double.class);
+        Root<Author> from = cr.from(Author.class);
+        cr.select(cb.avg(from.get("salary")));
+        Query<Double> query = session.createQuery(cr);
+        Double singleResult = query.getSingleResult();
+        session.close();
+        return singleResult;
+    }
+
+    public List<Author> getAuthorsWithSalaryGreaterThen(Integer salary) {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Author> cr = cb.createQuery(Author.class);
+        Root<Author> author = cr.from(Author.class);
+        cr.select(author).where(cb.gt(author.get("salary"), salary));
+        Query<Author> query = session.createQuery(cr);
+        List<Author> resultList = query.getResultList();
+        session.close();
+        return resultList;
     }
 
     /*HQL*/
@@ -78,12 +103,13 @@ public class AuthorRepository {
     public Author updateAuthorsName(Long id, String newNew) {
         Session session = sessionFactory.openSession();
         Author author = session.get(Author.class, id);
+        String oldName = author.getName();
         author.setName(newNew);
         session.beginTransaction();
         session.save(author);
         session.getTransaction().commit(); //commit = flush + commit
         session.close();
-        log.log(Level.INFO, "User "+author+" has changed the name to:"+author.getName());
+        log.log(Level.INFO, "User "+author+" has changed the name from "+oldName+" to "+author.getName());
         return author;
     }
 }

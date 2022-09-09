@@ -4,6 +4,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -15,7 +16,16 @@ public class Book {
 
     private String name;
 
-    private long author_id;
+    @ManyToMany(mappedBy = "books")
+    private Set<Author> authors;
+
+    public Set<Author> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(Set<Author> authors) {
+        this.authors = authors;
+    }
 
     public long getId() {
         return id;
@@ -31,14 +41,6 @@ public class Book {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public long getAuthor_id() {
-        return author_id;
-    }
-
-    public void setAuthor_id(long author_id) {
-        this.author_id = author_id;
     }
 
 }
