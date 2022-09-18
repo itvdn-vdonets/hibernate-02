@@ -1,37 +1,24 @@
 package org.example.models;
 
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
-
 import javax.persistence.*;
 import java.util.Set;
-import java.util.UUID;
 
 @Entity
 public class Book {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     private String name;
+    @ManyToMany(mappedBy = "books", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Set<Author> authors;
 
-    @ManyToMany(mappedBy = "books")
-    private Set<Author> authors;
-
-    public Set<Author> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(Set<Author> authors) {
-        this.authors = authors;
-    }
-
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -43,4 +30,19 @@ public class Book {
         this.name = name;
     }
 
+    public Book(String name) {
+        this.name = name;
+    }
+
+    public Book() {
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", authors=" + authors +
+                '}';
+    }
 }

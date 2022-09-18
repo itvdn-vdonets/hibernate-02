@@ -23,4 +23,8 @@ public class HibernateUtil {
         return factory;
     }
 
+    public static void closeSessionFactory() {
+        factory.close();
+    }
+
 }

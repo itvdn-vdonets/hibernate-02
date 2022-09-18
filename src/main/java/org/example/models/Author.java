@@ -1,6 +1,5 @@
 package org.example.models;
 
-import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
@@ -10,25 +9,67 @@ import java.util.Set;
 @DynamicUpdate
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private String name;
-    private Integer salary;
 
-    @ManyToMany
+    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
     @JoinTable(
-            name = "Authors_Books",
+            name = "Books_Authors",
             joinColumns = { @JoinColumn(name = "book_id") },
-            inverseJoinColumns = { @JoinColumn(name = "author_id")}
+            inverseJoinColumns = { @JoinColumn(name = "author_id") }
     )
-    private Set<Book> books;
+    Set<Book> books;
 
-    @OneToMany(mappedBy = "author", fetch = FetchType.EAGER)
-    private Set<Photo> photos;
+    public Author(Integer id, String name, Double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
 
-    @OneToOne(mappedBy = "author")
+    public Author() {
+    }
+
+    @OneToMany(mappedBy="author", fetch = FetchType.EAGER)
+    Set<Photo> photos;
+
+    @OneToOne(mappedBy = "author", cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
     private Address address;
+
+    private Double salary;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Set<Book> getBooks() {
         return books;
@@ -38,28 +79,13 @@ public class Author {
         this.books = books;
     }
 
-    public long getId() {
-        return id;
+    public Set<Photo> getPhotos() {
+        return photos;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getSalary() {
-        return salary;
-    }
-
-    public void setSalary(Integer salary) {
-        this.salary = salary;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setPhotos(Set<Photo> photos) {
+        System.out.println("====>>>SET: "+photos);
+        this.photos = photos;
     }
 
     @Override
@@ -68,9 +94,6 @@ public class Author {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
-                ", books=" + books +
-                ", photos=" + photos +
-                ", address=" + address +
                 '}';
     }
 }
